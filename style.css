@@ -45,8 +45,8 @@ section {
   background: white;
  
 }
-.cursor .click::before{
-   animation: click .1s ease-in-out forwards;
+.cursor.click::before{
+   animation: click .5s ease-in-out forwards;
 }
 
 @keyframes click{
