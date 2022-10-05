@@ -1,10 +1,12 @@
 const cursor = document.querySelector(".cursor");
 
-window.addEventListener("click",(e)=>{
+window.addEventListener("mousemove",(e)=>{
   
   cursor.style.left=e.pageX+"px";
   cursor.style.top=e.pageY+"px";
   cursor.setAttribute("data-fromTop",(cursor.offsetTop- scrollY))
+  cursor.style.display="block";
+  
 });
 
 window.addEventListener("scroll",()=>{
@@ -16,7 +18,7 @@ window.addEventListener("scroll",()=>{
 window.addEventListener("click", ()=>{
 
   if (cursor.classList.contains('click')) {
-    console.log ("siuuu")
+    
     cursor.classList.remove('click');
     void cursor.offsetWidth ;
     cursor.classList.add('click');
@@ -26,4 +28,3 @@ window.addEventListener("click", ()=>{
     
   }
 });
-
