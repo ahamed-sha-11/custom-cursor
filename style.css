@@ -22,7 +22,7 @@ section {
   left: 50px;
   height: 25px;
   width: 25px;
-  
+  display: none;
   border-radius:12px;
   transform: translate(-50%,-50%);
   pointer-events: none;
